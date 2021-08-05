@@ -1,18 +1,21 @@
 @import url("_base.css");
 
+@font-face {
+	font-family: "HK Grotesk";
+	src: url(../fonts/hk-grotesk.woff2), url(../fonts/hk-grotesk.woff);
+}
+
 body {
-	font-family: Arial;
-	font-size: 16px;
-	line-height: 1.5;
+	font-family: "HK Grotesk", Helvetica, Arial, sans-serif;
+	font-size: 36px;
+	line-height: 1.25;
 	
 	background-color: #ffffff;
 	color: #333333;
-	margin: 40px auto 40px auto;
-	width: 620px;
 }
 
-h1 {
-	font-size: 24px;
-	font-weight: 700;
+header {
+	position: fixed;
+	top: 36px;
+	left: 36px;
 }
-
