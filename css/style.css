@@ -16,6 +16,7 @@ body {
 
 div.progress {
 	background-color: #333333;
+	z-index: 5;
 
 	height: 5px;
 	width: 0;
@@ -104,6 +105,6 @@ section.s4 div.square {
 	background-color: #d54156;
 }
 
-section.s43 div.circle {
+section.s4 div.circle {
 	background-color: #5982a0;
 }
