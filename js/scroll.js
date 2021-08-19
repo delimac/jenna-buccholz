@@ -45,3 +45,20 @@ document.addEventListener("scroll", function () {
     }
   })
 })
+
+// when user scrolls the page, make things parallax
+// move certain tags, based on how far they are from an anchor point
+// anchorpoint is the middle of the section
+// how far should we parallax? it's a ratio of the distance scrolled to the middle point
+document.addEventListener("scroll", function () {
+  const topViewport = window.pageYOffset
+  const midViewport = topViewport + (window.innerHeight / 2)
+
+  sections.forEach(section => {
+    const topSection = section.offsetTop
+    const midSection = topSection + (section.offsetHeight / 2)
+
+    const distanceToSection = midViewport - midSection
+    console.log(distanceToSection)
+  })
+})
